@@ -312,4 +312,6 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+require(APPPATH.'libraries/CIAutoload.php');
+
 require_once BASEPATH.'core/CodeIgniter.php';
