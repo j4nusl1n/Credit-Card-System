@@ -7,7 +7,7 @@ function CIAutoload($className)
 {
     // 提供ci core用
     if (substr($className,0,3) !== 'CI_') {
-        if (file_exists($file = APPPATH . 'core/' . $className . EXT)) {
+        if (file_exists($file = APPPATH . 'core/' . $className . '.php')) {
             include $file;
         }
     }

@@ -1,4 +1,5 @@
 <?php
+namespace Service\Interfaces;
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
