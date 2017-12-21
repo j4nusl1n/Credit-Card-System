@@ -4,6 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 trait ViewControl {
 
+    private $_pageTitle;
+
     public function setView($page, $data = [], $layout = '') {
         if ($layout === '') {
             $layout = \DEFAULT_LAYOUT;
