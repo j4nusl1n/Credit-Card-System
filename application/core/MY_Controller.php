@@ -5,9 +5,10 @@ use Service\Exception\UserException;
 
 class MY_Controller extends CI_Controller {
 
+    public $resPath;
+    public $version;
+
     protected $rest;
-    protected $resPath;
-    protected $version;
 
     public function __construct() {
         parent::__construct();
@@ -25,6 +26,12 @@ class MY_Controller extends CI_Controller {
             case 'production':
                 break;
         }
+
+        $this->load->setJsVars([
+            'version' => $this->version,
+            'baseUrl' => base_url(),
+            'baseResUrl' => $this->resPath,
+        ]);
     }
 
     public function userException($message, $code = 0, Exception $prev = null) {
