@@ -14,7 +14,9 @@ $this->load->view('layout/adminLTE/header');
         <?php echo $viewContent; ?>
     </div>
 </div>
-</body>
 <!-- footer -->
-<?php ?>
+<?php
+$this->load->view('layout/adminLTE/footer');
+?>
+</body>
 </html>
