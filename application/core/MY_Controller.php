@@ -27,7 +27,7 @@ class MY_Controller extends CI_Controller {
         }
     }
 
-    protected function userException($message, $code = 0, Exception $prev = null) {
+    public function userException($message, $code = 0, Exception $prev = null) {
         throw new UserException($message, $code, $prev);
     }
 }
