@@ -4,19 +4,22 @@
 <?php
 $this->load->view('layout/adminLTE/header');
 ?>
-<body>
-<div class="wrapper" style="min-height:183px">
-    <!-- side menu -->
-    <?php ?>
+<body class="skin-blue-light sidebar-mini sidebar-collapse hold-transition">
+    <div class="wrapper" style="min-height:183px">
+        <!-- head bar -->
+        <?php $this->load->view('layout/adminLTE/headBar') ?>
 
-    <!-- main content -->
-    <div class="content-wrapper row">
-        <?php echo $viewContent; ?>
+        <!-- side menu -->
+        <?php ?>
+
+        <!-- main content -->
+        <div class="content-wrapper row">
+            <?php echo $viewContent; ?>
+        </div>
     </div>
-</div>
-<!-- footer -->
-<?php
-$this->load->view('layout/adminLTE/footer');
-?>
+    <!-- footer -->
+    <?php
+    $this->load->view('layout/adminLTE/footer');
+    ?>
 </body>
 </html>

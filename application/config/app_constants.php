@@ -1,6 +1,8 @@
 <?php
 
 const DEFAULT_LAYOUT = 'layout/adminLTE/Page';
+const WEB_TITLE_LITE = '';
+const WEB_TITLE = 'CreditCardSystem';
 
 /**
  * HTTP Status Code 
