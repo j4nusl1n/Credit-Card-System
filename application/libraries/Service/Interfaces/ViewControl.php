@@ -104,7 +104,17 @@ trait ViewControl {
                 }
                 $src = $file['url'];
                 if (isset($file['htmlOption'])) {
-                    $htmlOption = $file['htmlOption'];
+                    if (is_string($file['htmlOption'])) {
+                        $htmlOption = $file['htmlOption'];
+                    } else if (is_array($file['htmlOption'])) {
+                        $htmlOption = [];
+                        foreach ($file['htmlOption'] as $option => $val) {
+                            $htmlOption[] = "{$option}='{$val}'";
+                        }
+                        $htmlOption = implode(' ', $htmlOption);
+                    } else {
+                        $htmlOption = '';
+                    }
                 }
             }
 
