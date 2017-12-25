@@ -8,9 +8,6 @@ class Home extends MY_Controller {
     }
 
     public function index() {
-        var_dump([$this->rest->method(), $this->rest->getInput()]);
-        $this->load->setPageTitle('asdf');
-        var_dump($this->load->getPageTitle());
         $this->load->setView('Home/index');
     }
 }

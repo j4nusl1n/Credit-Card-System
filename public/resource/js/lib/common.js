@@ -26,4 +26,4 @@ requirejs.config({
         bootstrap: CDN.bootstrap,
         adminLTE: CDN.adminLTE,
     },
-})
+});
