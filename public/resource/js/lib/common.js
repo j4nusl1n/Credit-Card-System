@@ -1,10 +1,29 @@
 requirejs.config({
     baseUrl: jsVars.baseResUrl.js,
-    shim: {},
+    shim: {
+        backbone: {
+            deps: [
+                'jquery', 'underscore',
+            ],
+            exports: 'Backbone',
+        },
+        adminLTE: {
+            deps: [
+                'jquery', 'bootstrap',
+            ]
+        },
+        bootstrap: {
+            deps: [
+                'jquery',
+            ],
+        }
+    },
     urlArgs: 'ver=' + jsVars.version,
     paths: {
-        jquery: CDN.jqeury,
+        jquery: CDN.jquery,
         underscore: CDN.underscore,
         backbone: CDN.backbone,
+        bootstrap: CDN.bootstrap,
+        adminLTE: CDN.adminLTE,
     },
 })
