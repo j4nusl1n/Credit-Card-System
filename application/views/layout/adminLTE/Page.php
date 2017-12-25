@@ -4,7 +4,7 @@
 <?php
 $this->load->view('layout/adminLTE/header');
 ?>
-<body class="skin-blue-light sidebar-mini sidebar-collapse hold-transition">
+<body class="skin-blue-light sidebar-mini sidebar-collapse">
     <div class="wrapper" style="min-height:183px">
         <!-- head bar -->
         <?php $this->load->view('layout/adminLTE/headBar') ?>
