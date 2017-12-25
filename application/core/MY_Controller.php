@@ -15,7 +15,8 @@ class MY_Controller extends CI_Controller {
 
         $this->rest = new Restful($this);
         $this->resPath = [
-            'css' => base_url('resource/css/'), 'js' => base_url('resource/js/')
+            'css' => '//'.base_url('resource/css/'), 'js' => '//'.base_url('resource/js/'),
+            'base' => '//'.base_url('resource/'),
         ];
         
         switch (ENVIRONMENT) {
@@ -32,6 +33,8 @@ class MY_Controller extends CI_Controller {
             'baseUrl' => base_url(),
             'baseResUrl' => $this->resPath,
         ]);
+
+        $this->load->setPageTitle('Credit Card System');
     }
 
     public function userException($message, $code = 0, Exception $prev = null) {
