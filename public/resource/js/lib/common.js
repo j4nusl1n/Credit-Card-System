@@ -9,7 +9,7 @@ requirejs.config({
         },
         adminLTE: {
             deps: [
-                'jquery', 'bootstrap',
+                'bootstrap',
             ]
         },
         bootstrap: {
