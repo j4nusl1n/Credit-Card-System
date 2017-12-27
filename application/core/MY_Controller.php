@@ -25,6 +25,7 @@ class MY_Controller extends CI_Controller {
                 break;
             
             case 'production':
+                $this->version = WEB_VER;
                 break;
         }
 
