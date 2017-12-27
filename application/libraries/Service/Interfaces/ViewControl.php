@@ -121,7 +121,7 @@ trait ViewControl {
             if (preg_match('/^(http\:\/\/|https\:\/\/|\:\/\/)/', $src)) {
                 $src = $src;
             } else {
-                $src = '//'.$this->ci->resPath[$resType].$src.'?'.$this->ci->version;
+                $src = $this->ci->resPath[$resType].$src.'?'.$this->ci->version;
             }
             switch ($resType) {
                 case 'js':

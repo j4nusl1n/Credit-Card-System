@@ -15,8 +15,8 @@ class MY_Controller extends CI_Controller {
 
         $this->rest = new Restful($this);
         $this->resPath = [
-            'css' => '//'.base_url('resource/css/'), 'js' => '//'.base_url('resource/js/'),
-            'base' => '//'.base_url('resource/'),
+            'css' => base_url('resource/css/'), 'js' => base_url('resource/js/'),
+            'base' => base_url('resource/'),
         ];
         
         switch (ENVIRONMENT) {
