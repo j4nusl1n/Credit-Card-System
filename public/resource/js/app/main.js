@@ -4,7 +4,7 @@ define([
 ], function(Backbone) {
     var Main = Backbone.View.extend({
         initialize: function() {
-            $('ul').tree();
+            $('ul[data-widget=tree]').tree();
         }
     });
     
